@@ -6,7 +6,7 @@ namespace PactNet
 {
     public interface IPactVerifier
     {
-        [Obsolete("Please supply this information in the constructor. Will be removed in the next major version.")]
+        [Obsolete("Use HonoursPactWith(). Will be removed in the next major version.")]
         IPactVerifier ProviderStatesFor(string consumerName, Action setUp = null, Action tearDown = null);
 
         /// <summary>
